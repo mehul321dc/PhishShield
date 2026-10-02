@@ -1,0 +1,28 @@
+{
+  "name": "url-phishing-detection-platform",
+  "version": "1.0.0",
+  "description": "Comprehensive URL Phishing and Quishing (QR code) detection platform built with React and Node.js",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,cyan\" \"npm run server\" \"npm run client\"",
+    "start": "concurrently -n \"SERVER,CLIENT\" -c \"blue,cyan\" \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "phishing-detector",
+    "quishing",
+    "qr-code-scanner",
+    "url-detector",
+    "cybersecurity",
+    "react",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
